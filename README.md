@@ -34,7 +34,12 @@
 │   ├── run_cl.py            # 实验调度入口（支持分片并行）
 │   ├── make_cl_figures.py   # 由 results_cl/runs/*.json 绘制论文级图表
 │   └── build_cl_report.py   # 由实验结果自动生成 Markdown / DOCX 报告
-├── src/                     # 数据、模型、方法实现（common/models/cl_data/cl_methods）
+├── src/
+│   ├── common.py            # 随机种子、目录、结果序列化
+│   ├── data.py              # Fashion-MNIST 加载、Dataset 封装、批增强
+│   ├── models.py            # 小型 CNN
+│   ├── cl_data.py           # 任务切分与准确率矩阵评估
+│   └── cl_methods.py        # Replay / EWC / LwF 与统一训练引擎
 ├── docs/                    # 课程设计任务书
 └── report/                  # 最终提交报告
 ```
