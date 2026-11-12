@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 实验产物（体积大、可复现，不入库）
+results_cl/
+figures/*.png
+figures/*.pdf
+*.pt
+*.pth
+
+# 数据集缓存
+data/
+datasets/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# 临时文件
+~$*
+*.tmp
